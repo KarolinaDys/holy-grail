@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
     <link rel="stylesheet" href="flexbox.css">
     <title>CSS Layout - Holy Grail</title>
   </head>
@@ -11,7 +12,7 @@
       <h1>Flexbox</h1>
     </header>
     <div class = "container">
-    <nav>
+    <nav class = "col">
     <ul>
       <li><a href="index.html">Back</a></li>
       <li><a href="grid.html">Grid</a></li>
@@ -19,7 +20,7 @@
      </ul>
     </nav>
 
-    <main>
+    <main class = "col">
       <p>Most web pages are written in a combination of HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets). 
         In short, HTML specifies the content and logical structure of the page, while the CSS specifies how it looks: its colors, fonts, formatting, layout, and styling.
         CSS flex-box layout is a particular way to specify the layout of HTML pages.
@@ -32,7 +33,7 @@
       </p>
     </main>
 
-    <aside>
+    <aside class = "col">
       <img src="data:image/png;base64,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" alt="" />
     </aside>
    </div>

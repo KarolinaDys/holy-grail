@@ -6,8 +6,6 @@ nav {
     color: #1b6ca8;
     text-align: center;
     font-size: 30px;
-    margin: 0px 5px;
-    flex: 1 150px;
     }
     ul {
         list-style-type: none;
@@ -22,19 +20,19 @@ nav {
   main { 
     
     background-color: #fce8d5;
-    margin: 0px 5px;
-    flex: 2 200px;
-    }
+  }
 
+.col {
+    margin: 0px 5px;
+    flex: 1 200px;
+}
+  
   h1 { 
       text-align: center;
       color: #0a97b0;
       font-size: 50px;
     }
-    img{
-        flex: 3 200px;
-        margin: 0px 5px;
-    }
+
   footer {
 		position: absolute;
 		bottom: 0;
@@ -44,3 +42,9 @@ nav {
 .container {
     display: inline-flex;
 }
+@media only screen and (max-width: 768px) {
+ .col {
+     flex: column;
+     width: 100%;
+    }
+  }
