@@ -26,12 +26,14 @@ nav {
       text-align: center;
       color: #0a97b0;
       font-size: 50px;
+      background-color: #fce8d5;
     }
   footer {
 		position: absolute;
 		bottom: 0;
 		width:100%;
-		height:60px;		
+        height:60px;
+        text-align: center;	
 
   }
   .wrapper {
