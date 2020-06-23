@@ -39,6 +39,10 @@ nav {
 		height:60px;		
 
   }
+  img {
+    margin:0 auto;
+    display:block;
+}
   @media only screen and (max-width: 768px) {
     .column {
         flex: column;
